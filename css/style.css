@@ -572,4 +572,6 @@ body {
   .side-nav {
     font-size: 1.2rem; }
     .side-nav__link:link, .side-nav__link:visited {
-      padding: 1rem 1.5rem; } }
+      padding: 1rem 1.5rem; }
+  .search {
+    flex: 1; } }
