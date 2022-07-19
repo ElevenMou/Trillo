@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    font-size: 1.4rem;
+    height: 6rem;
+    position: fixed;
+    top: 0;
+    z-index: 2000;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    height: 50rem;
+    position: relative;
+    top: 6rem;
+}
+
+.sidebar {
+    min-height: calc(100% - 6rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $color-grey-dark-1;
+    position: fixed;
+    left: 0;
+    top: 6rem;
+    width: 24rem;
+    z-index: 10;
+}
+
+.hotel-view {
+    position: relative;
+    z-index: 20;
+
+    background-color: $color-grey-light-1;
+    width: calc(100% - 24rem);
+    min-height: calc(100vh - 6rem);
+    left: 24rem;
+}

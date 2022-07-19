@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <title>trillo &mdash; Your all-in-one booking app</title>
+</head>
+
+<body>
+    <header class="header">
+        <img src="img/logo.png" alt="logo" class="logo">
+        <form action="#" class="search">
+            <input type="text" class="search__input" placeholder="search hotels">
+            <button class="search__button">
+                <svg class="search__icon">
+                    <use xlink:href="img/icons.svg#icon-magnifying-glass"></use>
+                </svg>
+            </button>
+        </form>
+        <nav class="user-nav">
+            <div class="user-nav__icon-box">
+                <svg class="user-nav__icon">
+                    <use xlink:href="img/icons.svg#icon-bookmark"></use>
+                </svg>
+                <span class="user-nav__notification">11</span>
+            </div>
+            <div class="user-nav__icon-box">
+                <svg class="user-nav__icon">
+                    <use xlink:href="img/icons.svg#icon-chat"></use>
+                </svg>
+                <span class="user-nav__notification">7</span>
+            </div>
+            <div class="user-nav__user">
+                <img src="img/user.jpg" alt="user image" class="user-nav__user-photo" />
+                <span class="user-nav__user-name">Moussa</span>
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+        <nav class="sidebar">
+            <ul class="side-nav">
+                <li class="side-nav__item side-nav__item--active">
+                    <a href="#" class="side-nav__link">
+                        <svg class="side-nav__icon">
+                            <use xlink:href="img/icons.svg#icon-home"></use>
+                        </svg>
+                        <span>Home</span>
+                    </a>
+                </li>
+
+                <li class="side-nav__item">
+                    <a href="#" class="side-nav__link">
+                        <svg class="side-nav__icon">
+                            <use xlink:href="img/icons.svg#icon-aircraft"></use>
+                        </svg>
+                        <span>Flight</span>
+                    </a>
+                </li>
+
+                <li class="side-nav__item">
+                    <a href="#" class="side-nav__link">
+                        <svg class="side-nav__icon">
+                            <use xlink:href="img/icons.svg#icon-key"></use>
+                        </svg>
+                        <span>Car rental</span>
+                    </a>
+                </li>
+
+                <li class="side-nav__item">
+                    <a href="#" class="side-nav__link">
+                        <svg class="side-nav__icon">
+                            <use xlink:href="img/icons.svg#icon-map"></use>
+                        </svg>
+                        <span>Tours</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="legal">
+                &copy; 2022 by elevenMou. All rights reserved.
+            </div>
+        </nav>
+        <main class="hotel-view">
+            <div class="gallery">
+                <figure class="gallery__item">
+                    <img src="img/hotel-1.jpg" alt="hotel 1 photo" class="gallery__photo">
+                </figure>
+                <figure class="gallery__item">
+                    <img src="img/hotel-2.jpg" alt="hotel 2 photo" class="gallery__photo">
+                </figure>
+                <figure class="gallery__item">
+                    <img src="img/hotel-3.jpg" alt="hotel 3 photo" class="gallery__photo">
+                </figure>
+                <figure class="gallery__item">
+                    <img src="img/hotel-4.jpg" alt="hotel 4 photo" class="gallery__photo">
+                </figure>
+                <figure class="gallery__item">
+                    <img src="img/hotel-5.jpg" alt="hotel 5 photo" class="gallery__photo">
+                </figure>
+                <figure class="gallery__item">
+                    <img src="img/hotel-6.jpg" alt="hotel 6 photo" class="gallery__photo">
+                </figure>
+            </div>
+            <div class="overview">
+                <div class="overview__heading">Dar Meziana</div>
+                <div class="overview__stars">
+                    <svg class="overview__icon">
+                        <use xlink:href="img/icons.svg#icon-star"></use>
+                    </svg>
+                    <svg class="overview__icon">
+                        <use xlink:href="img/icons.svg#icon-star"></use>
+                    </svg>
+                    <svg class="overview__icon">
+                        <use xlink:href="img/icons.svg#icon-star"></use>
+                    </svg>
+                </div>
+                <div class="overview__location">
+                    <svg class="overview__icon">
+                        <use xlink:href="img/icons.svg#icon-location-pin"></use>
+                    </svg>
+                    <button class="btn-inline">Derb Zaghdoud, N°7, Bab Souk, Chefchaouen, Morocco</button>
+                </div>
+                <div class="overview__rating">
+                    <div class="overview__rating-average">9.7</div>
+                    <div class="overview__rating-count">896 votes</div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

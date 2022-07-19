@@ -1,0 +1,53 @@
+.gallery{
+    display: flex;
+    &__item{
+        &:not(:last-child){
+            border-right: .1rem solid $color-grey-light-2;
+        } 
+    }
+    &__photo{
+        width: 100%;
+        display: block;
+        
+    }
+}
+.overview{
+    display: flex;
+    align-items: center;
+    background-color: $color-white;
+
+    &__heading{
+        padding: 1rem 3rem;
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+    &__stars{
+        display: flex;
+        margin-right: auto;
+    }
+    &__icon{
+        height: 2.5rem;
+        width: 2.5rem;
+        fill: $color-primary;
+    }
+    &__location{
+        display: flex;
+    }
+    &__rating{
+        background-color: $color-primary;
+        height: 100%;
+        color: $color-white;
+        padding: .8rem 3.5rem;
+        font-weight: 100;
+        text-align: center;
+        margin-left: 1.5rem;
+    }
+    &__rating-average{
+        font-size: 3rem;
+    }
+    &__rating-count{
+        font-size: 1.5rem;
+        margin-top: -1rem;
+    }
+}
