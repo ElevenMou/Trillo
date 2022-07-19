@@ -1,0 +1,11 @@
+@media only screen and (max-width: 415px){
+    .side-nav {
+        font-size: 1.2rem;
+    
+        &__link:link,
+        &__link:visited {     
+            padding: 1rem 1.5rem;
+        }
+    }
+    
+}

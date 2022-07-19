@@ -9,17 +9,17 @@
     top: 0;
     z-index: 2000;
     width: 100%;
+    border-bottom: 3px solid $color-grey-light-2;
 }
 
 .content {
     display: flex;
-    height: 50rem;
     position: relative;
     top: 6rem;
 }
 
 .sidebar {
-    min-height: calc(100% - 6rem);
+    height: calc(100% - 6rem);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -28,15 +28,101 @@
     left: 0;
     top: 6rem;
     width: 24rem;
-    z-index: 10;
+    z-index: 1000;
 }
 
 .hotel-view {
     position: relative;
     z-index: 20;
-
-    background-color: $color-grey-light-1;
     width: calc(100% - 24rem);
     min-height: calc(100vh - 6rem);
     left: 24rem;
+}
+
+.details {
+    font-size: 1.4rem;
+    display: flex;
+    padding: 5rem;
+    background-color: $color-grey-light-1;
+    border-bottom: 3px solid $color-grey-light-2;
+}
+
+.description {
+
+    background-color: $color-white;
+    box-shadow: 0 2rem 5rem rgba($color: #000000, $alpha: .1);
+    padding: 3rem;
+    flex: 0 0 60%;
+    margin-right: 5rem;
+}
+
+.paragraph:not(:last-of-type) {
+    margin-bottom: 2rem;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 3rem 0;
+    padding: 3rem 0;
+    border-top: 2px solid $color-grey-light-2;
+    border-bottom: 2px solid $color-grey-light-2;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        flex: 0 0 50%;
+        padding: .3rem 0;
+
+    }
+
+    &__icon {
+        width: 1.75rem;
+        height: 1.75rem;
+        fill: $color-primary;
+    }
+}
+
+.recommend {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__photo {
+        height: 5rem;
+        width: 5rem;
+        border: .4rem solid $color-white;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+
+        &:not(:last-child) {
+            margin-right: -1.5rem;
+        }
+    }
+}
+
+.user-reviews {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    background-color: $color-white;
+    &__text {
+        font-size: 2.5rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
 }

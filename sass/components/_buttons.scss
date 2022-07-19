@@ -1,7 +1,101 @@
-.btn-inline{
+.btn-inline {
     cursor: pointer;
     border: none;
     background: none;
-    color: inherit;
-    font-size: inherit;
+    color: $color-primary;
+    font-size: 1.6rem;
+    border-bottom: .1rem solid currentColor;
+    display: inline-block;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+
+    span {
+        margin-left: .3rem;
+        transition: margin-left .2s;
+        -webkit-transition: margin-left .2s;
+        -moz-transition: margin-left .2s;
+        -ms-transition: margin-left .2s;
+        -o-transition: margin-left .2s;
+    }
+
+    &:hover {
+        color: $color-grey-dark-1;
+
+        span {
+            margin-left: 1rem;
+        }
+    }
+
+    &:focus {
+        animation: pulsate 1s infinite;
+        -webkit-animation: pulsate 1s infinite;
+    }
+}
+
+.btn {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 300;
+    border-radius: 10rem;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark );
+    color: $color-white;
+    overflow: hidden;
+
+    &__visible {
+        display: inline-block;
+        padding: 2rem 7rem;
+        width: 100%;
+        height: 100%;
+        transition: all .2s;
+        -webkit-transition: all .2s;
+        -moz-transition: all .2s;
+        -ms-transition: all .2s;
+        -o-transition: all .2s;
+}
+
+    &__hidden {
+        display: inline-block;
+        position: absolute;
+        padding: 2rem 0;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all .2s;
+        -webkit-transition: all .2s;
+        -moz-transition: all .2s;
+        -ms-transition: all .2s;
+        -o-transition: all .2s;
+    }
+
+    &:hover {
+        background-image: linear-gradient(to left, $color-primary-light, $color-primary-dark );
+    }
+
+    &:hover &__visible {
+        transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        -o-transform: translateY(100%);
+}
+
+    &:hover &__hidden {
+        top: 0;
+    }
+    &:focus {
+        animation: pulsate 1s infinite;
+        -webkit-animation: pulsate 1s infinite;
+}
 }

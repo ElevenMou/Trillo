@@ -1,0 +1,43 @@
+@media only screen and (max-width: 750px){
+    .overview{
+        flex-direction: column;
+        justify-content: center;
+
+        &__group {
+            margin-right: 0;
+            justify-content: center;
+        }
+
+        &__location{
+            padding-bottom: 3rem;
+        }
+        &__rating{
+            margin-left: 0rem;
+        }
+        &__rating-average{
+            font-size: 3rem;
+        }
+        &__rating-count{
+            font-size: 1.5rem;
+            margin-top: -1rem;
+        }
+    }
+
+    .recommend {
+        flex-direction: column;
+        &__photo {
+            height: 5rem;
+            width: 5rem;
+            border: .4rem solid $color-white;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+    
+            &:not(:last-child) {
+                margin-right: -1.5rem;
+            }
+        }
+    }
+}

@@ -2,7 +2,7 @@
     display: flex;
     &__item{
         &:not(:last-child){
-            border-right: .1rem solid $color-grey-light-2;
+            border-right: .1rem solid $color-white;
         } 
     }
     &__photo{
@@ -15,16 +15,22 @@
     display: flex;
     align-items: center;
     background-color: $color-white;
-
+    border-bottom: 3px solid $color-grey-light-2;
     &__heading{
         padding: 1rem 3rem;
         font-size: 3rem;
         text-transform: uppercase;
         font-weight: 300;
+        letter-spacing: .4rem;
+    }
+    &__group {
+        display: flex;
+        margin-right: auto;
+        align-items: center;
     }
     &__stars{
         display: flex;
-        margin-right: auto;
+        
     }
     &__icon{
         height: 2.5rem;
@@ -33,14 +39,16 @@
     }
     &__location{
         display: flex;
+        font-size: 1.4rem;
+
     }
     &__rating{
         background-color: $color-primary;
-        height: 100%;
         color: $color-white;
-        padding: .8rem 3.5rem;
+        padding: 0 3rem;
         font-weight: 100;
         text-align: center;
+        align-self: stretch;
         margin-left: 1.5rem;
     }
     &__rating-average{
