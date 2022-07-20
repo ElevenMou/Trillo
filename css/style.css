@@ -206,11 +206,13 @@ body {
   color: #ccc; }
 
 .gallery {
-  display: flex; }
+  display: flex;
+  justify-content: center; }
   .gallery__item:not(:last-child) {
     border-right: 0.1rem solid #fff; }
   .gallery__photo {
     width: 100%;
+    max-height: 50vh;
     display: block; }
 
 .overview {
